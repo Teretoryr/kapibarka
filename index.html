@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        My GOOD Webskam
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="crocodale.css">
+    <a href="button.html">
+        <link rel="stylesheet" href="cgt.css">
+
+        <title>Donate</title>
+        <h3 align="center">
+            <font face="Pixtile" size="10">DONATE </font>
+            <font face="Pixtile" size="10">TO KAPIBARA</font>
+
+        </h3>
+    </a>
+</head>
+
+<body>
+    <div id="preloder"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+
+
+    <!----images slides--->
+    <div class="slider">
+        <div class="slidets">
+            <!----buttons---->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!---slide images--->
+            <div class="slide first">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="7.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="8.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto_btn1"></div>
+                <div class="auto_btn2"></div>
+                <div class="auto_btn3"></div>
+                <div class="auto_btn4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+
+
+        <script>
+            var loader = document.getElementById("preloder");
+
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+        </script>
+
+</body>
+
+</html>
